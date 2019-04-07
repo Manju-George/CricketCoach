@@ -1,0 +1,8 @@
+
+{% extends "index.html" %}
+
+{% block history_content %}
+    <div class="container" align="left">
+    	<embed type="image/svg+xml" src={{graph_data|safe}} style='max_width:10px'/>
+    </div>
+{% endblock %}
