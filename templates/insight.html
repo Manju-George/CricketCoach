@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <select name= insight_menu method="GET" action="/">
+	    {% for item in insight_menu %}
+	    	<option value= "{{item}}" SELECTED>{{item}}</option>"
+	    {% endfor %}
+	</select>
+{% endblock %}

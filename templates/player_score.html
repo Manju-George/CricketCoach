@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Scores for {{player.name}}</h1>
+    <script> document.write(new Date().toLocaleDateString()); </script>
+    <form action="/add_record" method="post">
+    <table>
+      <tr>
+        <th>Ball No.</th>
+        <th>Batting Score</th>
+        <th>Bowling Score</th>
+      </tr>
+      {% for ball in balls %}
+      <tr>
+        <td>{{ball}}</td>
+        <td>
+            <input type="radio" name="Score" value="1"> 1<br>
+            <input type="radio" name="Score" value="2"> 2<br>
+            <input type="radio" name="Score" value="3"> 3
+        </td>
+        <td>
+            <input type="radio" name="Score" value="1"> 1<br>
+            <input type="radio" name="Score" value="2"> 2<br>
+            <input type="radio" name="Score" value="3"> 3
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <button type="submit">Send</button>
+  </form>
+{% endblock %}
