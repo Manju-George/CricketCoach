@@ -1,0 +1,21 @@
+1. Open a terminal in teh project and run "npm init"
+2. Install production dependency "npm install react react-dom --save
+(save tells npm that these are production dependencies)
+3. Install development dependency: 
+"npm install webpack webpack-dev-server babel-loader babel-preset-env babel-preset-react babel-preset-stage-2 --save-dev
+webpack-dev-server: for creating a server environment
+babel: responsible for transpiling ES6 code to ES5 code
+Note there are changes to babel:
+npm install --save-dev @babel/core @babel/preset-env and npm install --save-dev @babel/preset-react
+npm install --save-dev @babel/preset-react
+
+only deplys production dependency and not development dependencies.
+4. Create a new folder "src".
+5. Create a new folder "app" in src.
+6. Create a new html file in src: index.html: This is the main entry point for the app
+7. Create a new file "webpack.config.js" in src.: JS file to setip and confiure webpack
+
+
+Git setup:
+1. Specify SSH(follow github)
+2. Add origin(adds a new remote)git: git remote add origin git@github.com:Manju-George/Coach-Assistant.git
